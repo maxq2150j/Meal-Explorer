@@ -55,96 +55,6 @@ http://localhost:3000
 
 Base URL: `http://localhost:3000/api`
 
-### Endpoints
-
-#### 1. Search Meals by Name
-```
-GET /api/search?q={query}
-```
-**Example**: `/api/search?q=chicken`
-
-**Response**:
-```json
-{
-  "meals": [
-    {
-      "idMeal": "52940",
-      "strMeal": "Chicken Alfredo",
-      "strMealThumb": "...",
-      "strCategory": "Chicken"
-    }
-  ]
-}
-```
-
-#### 2. Get All Categories
-```
-GET /api/categories
-```
-
-**Response**:
-```json
-{
-  "categories": [
-    {
-      "idCategory": "1",
-      "strCategory": "Beef",
-      "strCategoryThumb": "...",
-      "strCategoryDescription": "..."
-    }
-  ]
-}
-```
-
-#### 3. Get Meals by Category
-```
-GET /api/category/{categoryName}
-```
-**Example**: `/api/category/Seafood`
-
-**Response**:
-```json
-{
-  "meals": [
-    {
-      "idMeal": "52959",
-      "strMeal": "Baked salmon",
-      "strMealThumb": "..."
-    }
-  ]
-}
-```
-
-#### 4. Get Random Meal
-```
-GET /api/random
-```
-
-**Response**:
-```json
-{
-  "meals": [
-    {
-      "idMeal": "52772",
-      "strMeal": "Teriyaki Chicken Casserole",
-      "strCategory": "Chicken",
-      "strInstructions": "...",
-      "strMealThumb": "...",
-      "strYoutube": "...",
-      "strIngredient1": "soy sauce",
-      "strMeasure1": "3/4 cup"
-    }
-  ]
-}
-```
-
-#### 5. Get Meal Details by ID
-```
-GET /api/meal/{id}
-```
-**Example**: `/api/meal/52772`
-
-**Response**: Full meal details including ingredients, instructions, and video link
 
 ## Cache Configuration
 
@@ -227,9 +137,6 @@ meal explorer/
 - [ ] Meal planning features
 - [ ] Recipe ratings and comments
 
-## License
-
-MIT
 
 ## Author
 
